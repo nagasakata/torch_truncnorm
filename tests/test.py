@@ -31,7 +31,7 @@ class TruncatedNormalSC:
     def log_prob(self, value):
         return truncnorm.logpdf(value, self.alpha, self.beta, loc=self.loc, scale=self.scale)
 
-    @property
+    
     def entropy(self):
         return truncnorm.entropy(self.alpha, self.beta, loc=self.loc, scale=self.scale)
 
